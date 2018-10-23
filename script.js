@@ -35,5 +35,16 @@ $(document).ready(function() {
       $("html, body").animate({ scrollTop: 0 }, 500);
       return false;
   });
+
+  // Open Close Register Form
+
+  $(".register").click(function() {
+    $(".register-form").fadeToggle();
+  })
+
+
+  $(".close").click(function() {
+    $(this).parent().fadeOut();
+  })
   
 });
