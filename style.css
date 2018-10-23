@@ -467,3 +467,120 @@ nav {
   border-radius: 100%;
   margin-right: 20px;
 }
+
+#backToTop {
+  width: 40px;
+  height: 40px;
+  bottom: 125px;
+  left: 90%;
+  background-color: #595D8F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  }
+
+  #backToTop:hover {
+    background-color: #FF5C50;
+  }
+
+  /* Service Section */
+
+  .service-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .service-area h3 {
+    font-size: 3em;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: rgb(52, 55, 92);
+    text-transform: uppercase;
+  }
+
+  .service-area p {
+    color: #FF5C50;
+    font-size: .9em;
+    font-weight: 900;
+  }
+
+  .offers {
+    display: flex;
+  }
+  
+  .row {
+    padding: 50px;
+  }
+
+  .offers .row ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    color: #999;
+  }
+
+  .offers .row ul li::before {
+    font-family: "Material Icons";
+    content: "check_box";
+    position: relative;
+    right: 10px;
+    top: 2px;
+    color: #FF5C50;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+  }
+
+  .buttons button {
+    padding: 8px 25px;
+  }
+
+  .view-more {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(52, 55, 92);
+    color: rgb(52, 55, 92);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  .view-more::after {
+    font-family: "Material Icons";
+    content: "arrow_right_alt";
+    position: relative;
+    font-size: 18px;
+    left: 8px;
+    transition: all .3s;
+  }
+
+  .view-more:hover {
+    border: 2px solid #FF5C50;
+  }
+
+  .view-more:hover::after {
+    left: 5px;
+  }
+
+  .services {
+    background-color: #FF5C50;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 900;
+    font-size: .75em;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  .services:hover {
+    background-color: rgb(52, 55, 92);
+  }
