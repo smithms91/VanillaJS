@@ -51,6 +51,10 @@ body {
   position: relative;
 }
 
+.register-form {
+  display: none;
+}
+
 .register {
   margin-right: 20px;
   cursor: pointer;
@@ -647,8 +651,23 @@ nav {
     font-size: .75em;
     cursor: pointer;
     transition: all .3s;
+    padding-top: 3px !important;
   }
 
   .services:hover {
     background-color: rgb(52, 55, 92);
+  }
+
+  .services::after {
+    font-family: "Material Icons";
+    content: "arrow_right_alt";
+    position: relative;
+    font-size: 18px;
+    left: 10px;
+    top: 4px;
+    transition: all .3s;
+  }
+
+  .services:hover::after {
+    left: 7px;
   }
